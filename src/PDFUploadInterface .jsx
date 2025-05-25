@@ -50,7 +50,7 @@ const PDFUploadInterface = () => {
       const formData = new FormData();
       formData.append('pdf', file);
 
-      const response = await axios.post('http://localhost:3000/process-pdf', formData, {
+      const response = await axios.post('https://pdf-fixer.onrender.com/process-pdf', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         },
